@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateSuplierTable extends Migration
+class CreateSupliersTable extends Migration
 {
     /**
      * Run the migrations.
@@ -14,7 +14,7 @@ class CreateSuplierTable extends Migration
     public function up()
     {
         Schema::create('supliers', function (Blueprint $table) {
-            $table->increments('id_suplier');
+            $table->increments('id');
             $table->string('nama')->unique();
             $table->string('alamat');
             $table->integer('kode_pos');

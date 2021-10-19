@@ -222,4 +222,18 @@ Route::get('latihan-controller', [MyController::class, 'latihan']);
 
 Route::get('biodata-saya', [MyController::class, 'biodata']);
 
-Route::get('bio', [MyController::class, 'bio']);
+Route::get('barangs', [MyController::class, 'barang']);
+
+Route::get('barangs/{id}', [MyController::class, 'barang2']);
+
+Route::get('pesanans', [MyController::class, 'pesanan']);
+Route::get('pesanans/{id}', [MyController::class, 'pesanan2']);
+
+Route::get('pembelians', [MyController::class, 'pembelian']);
+Route::get('pembelians/{id}', [MyController::class, 'pembelian2']);
+
+Route::get('pembelis', [MyController::class, 'pembeli']);
+Route::get('pembelis/{id}', [MyController::class, 'pembeli2']);
+
+Route::get('supliers', [MyController::class, 'suplier']);
+Route::get('supliers/{id}', [MyController::class, 'suplier2']);

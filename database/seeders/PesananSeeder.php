@@ -15,13 +15,13 @@ class PesananSeeder extends Seeder
      */
     public function run()
     {
-        $pembeli = [
-            ['nama' => 'Mamat', 'jns_kelamin' => 'Laki-laki', 'kode_pos' => 420365, 'kota' => 'Bandung'],
-            ['nama' => 'Dinda', 'jns_kelamin' => 'Perempuan', 'kode_pos' => 420365, 'kota' => 'Surabaya'],
-            ['nama' => 'Jaka', 'jns_kelamin' => 'Laki-laki', 'kode_pos' => 420365, 'kota' => 'Yogyakarta'],
-            ['nama' => 'Rio', 'jns_kelamin' => 'Laki-laki', 'kode_pos' => 420365, 'kota' => 'Jakarta'],
-            ['nama' => 'Firman', 'jns_kelamin' => 'Laki-laki', 'kode_pos' => 420365, 'kota' => 'Sukabumi'],
+        $pesanan = [
+            ['nama_pelanggan' => 'Mamat', 'nama_barang' => 'Xiaomi', 'qty' => 10, 'tgl_pesan' => '2021-10-12'],
+            ['nama_pelanggan' => 'Dinda', 'nama_barang' => 'Samsung', 'qty' => 12, 'tgl_pesan' => '2021-01-19'],
+            ['nama_pelanggan' => 'Jaka', 'nama_barang' => 'IPhone', 'qty' => 11, 'tgl_pesan' => '2021-11-29'],
+            ['nama_pelanggan' => 'Rio', 'nama_barang' => 'Vivo', 'qty' => 17, 'tgl_pesan' => '2021-12-10'],
+            ['nama_pelanggan' => 'Firman', 'nama_barang' => 'Oppo', 'qty' => 20, 'tgl_pesan' => '2021-11-18'],
         ];
-        DB::table('pesanans')->insert($pembeli);
+        DB::table('pesanans')->insert($pesanan);
     }
 }

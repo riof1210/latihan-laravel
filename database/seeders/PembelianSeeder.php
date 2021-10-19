@@ -16,11 +16,11 @@ class PembelianSeeder extends Seeder
     public function run()
     {
         $pembelian = [
-            ['nama_barang' => 'Xiaomi', 'nama' => 'Xiaomi Redmi Note 8', 'harga_beli' => 1500000, 'harga_jual' => 1800000],
-            ['nama' => 'Samsung', 'nama' => 'Samsung Galaxy Note 10', 'harga_beli' => 16000000, 'harga_jual' => 19000000],
-            ['nama' => 'IPhone', 'nama' => 'IPhone 13 Pro Max', 'harga_beli' => 2000000, 'harga_jual' => 2800000],
-            ['nama' => 'Oppo', 'nama' => 'Oppo F9', 'harga_beli' => 1300000, 'harga_jual' => 1500000],
-            ['nama' => 'Vivo', 'nama' => 'Vivo V15', 'harga_beli' => 1500000, 'harga_jual' => 1800000],
+            ['nama_barang' => 'Xiaomi', 'nama_suplier' => 'Agus', 'qty' => 15, 'tgl' => '2021-01-10'],
+            ['nama_barang' => 'Samsung', 'nama_suplier' => 'John', 'qty' => 16, 'tgl' => '2021-10-17'],
+            ['nama_barang' => 'IPhone', 'nama_suplier' => 'Jeni', 'qty' => 21, 'tgl' => '2021-12-20'],
+            ['nama_barang' => 'Oppo', 'nama_suplier' => 'Jajang', 'qty' => 13, 'tgl' => '2021-12-10'],
+            ['nama_barang' => 'Vivo', 'nama_suplier' => 'Kidam', 'qty' => 15, 'tgl' => '2021-03-20'],
         ];
         DB::table('pembelians')->insert($pembelian);
     }
